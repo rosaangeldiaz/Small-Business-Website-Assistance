@@ -15,13 +15,8 @@
 
         header {
             text-align: center;
-            padding: 30px 20px;
+            padding: 10px 20px;
             background: white;
-        }
-
-        header img {
-            max-width: 280px;
-            height: auto;
         }
 
         section {
@@ -48,6 +43,12 @@
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
             flex: 1 1 250px;
             text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.15);
         }
 
         .price {
@@ -79,9 +80,11 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
+            transition: transform 0.2s ease, background 0.2s ease;
         }
 
         button:hover {
+            transform: scale(1.05);
             background: #1f4e70;
         }
 
@@ -91,16 +94,38 @@
             background: #1f3c5b;
             color: white;
         }
+
+        /* Fade animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header, section, footer {
+            animation: fadeIn 1s ease forwards;
+        }
+
+        .logo {
+            animation: fadeIn 1.5s ease forwards;
+        }
+
     </style>
 </head>
 
 <body>
 
 <header>
-<header style="text-align:center; padding:10px 20px;">
 
-    <img src="logo.png" alt="LSB Web Assistance Logo"
-         style="max-width:600px; height:auto; display:block; margin:0 auto 0 auto;">
+    <img src="logo.png"
+         alt="LSB Web Assistance Logo"
+         class="logo"
+         style="max-width:600px; height:auto; display:block; margin:0 auto;">
 
     <h1 style="margin:0;">Lawton Small Business Web Assistance</h1>
 
@@ -110,6 +135,7 @@
 
 <section>
     <h2>Our Services</h2>
+
     <div class="card-container">
         <div class="card">
             <h3>Business Websites</h3>
@@ -130,6 +156,7 @@
 
 <section>
     <h2>Pricing</h2>
+
     <div class="card-container">
 
         <div class="card">
@@ -147,7 +174,7 @@
         <div class="card">
             <h3>Premium</h3>
             <p class="price">$500</p>
-            <p>Advanced design<br>Booking or features<br>Priority support</p>
+            <p>Advanced design<br>Booking features<br>Priority support</p>
         </div>
 
     </div>
@@ -156,7 +183,6 @@
 <section>
     <h2>Contact Us</h2>
 
-    <!-- Replace with your email -->
     <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
 
         <label>Name</label>
