@@ -16,17 +16,18 @@
         header {
             background-color: #2c3e50;
             color: white;
-            padding: 40px 20px;
+            padding: 30px 20px;
             text-align: center;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 32px;
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
         }
 
         header p {
-            margin-top: 10px;
+            margin: 0;
             font-size: 18px;
         }
 
@@ -40,10 +41,6 @@
             color: #2c3e50;
         }
 
-        ul {
-            line-height: 1.8;
-        }
-
         .card {
             background: white;
             padding: 20px;
@@ -52,11 +49,52 @@
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
 
-        .contact {
-            background-color: #ecf0f1;
+        .pricing {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .price-box {
+            flex: 1;
+            min-width: 250px;
+            background: #ecf0f1;
             padding: 20px;
             border-radius: 8px;
-            margin-top: 30px;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
         }
 
         footer {
@@ -66,64 +104,88 @@
             color: white;
             margin-top: 40px;
         }
-
-        a.button {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 12px 20px;
-            background-color: #3498db;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        a.button:hover {
-            background-color: #2980b9;
-        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Lawton Small Business Website Assistance</h1>
-    <p>Helping Local Businesses Get Online — Fast & Affordable</p>
+    <div class="logo">LSB Web Assistance</div>
+    <p>Helping Lawton Businesses Get Online — Fast & Affordable</p>
 </header>
 
 <div class="container">
 
     <div class="card">
-        <h2>About Us</h2>
+        <h2>About</h2>
         <p>
-            We provide simple, affordable websites for small businesses that want to attract more customers,
-            look professional, and grow their online presence without stress or high costs.
+            We create simple, professional websites for small businesses that want more customers
+            and a stronger online presence without high costs or stress.
         </p>
     </div>
 
     <div class="card">
-        <h2>What We Offer</h2>
+        <h2>Services</h2>
         <ul>
-            <li>✅ Basic business websites</li>
+            <li>✅ Business websites</li>
             <li>✅ Mobile‑friendly design</li>
-            <li>✅ Contact forms and booking links</li>
-            <li>✅ Website updates and improvements</li>
-            <li>✅ Fast turnaround times</li>
+            <li>✅ Contact & booking links</li>
+            <li>✅ Updates & improvements</li>
+            <li>✅ Fast turnaround</li>
         </ul>
     </div>
 
     <div class="card">
-        <h2>Why Choose Us</h2>
-        <p>
-            We focus on small businesses and understand the importance of clear communication,
-            reliability, and results. Our goal is to help your business become more visible online
-            and reach more customers.
-        </p>
+        <h2>Pricing</h2>
+
+        <div class="pricing">
+
+            <div class="price-box">
+                <h3>Starter</h3>
+                <div class="price">$150</div>
+                <p>1‑Page Website</p>
+                <p>Mobile Friendly</p>
+                <p>Contact Info</p>
+            </div>
+
+            <div class="price-box">
+                <h3>Business</h3>
+                <div class="price">$300</div>
+                <p>Up to 5 Pages</p>
+                <p>Custom Design</p>
+                <p>Contact Form</p>
+            </div>
+
+            <div class="price-box">
+                <h3>Premium</h3>
+                <div class="price">$500+</div>
+                <p>Advanced Features</p>
+                <p>Booking / Integrations</p>
+                <p>Priority Support</p>
+            </div>
+
+        </div>
     </div>
 
-    <div class="contact">
-        <h2>Get Started</h2>
-        <p>Email: your@email.com</p>
-        <p>Phone: (optional)</p>
-        <a class="button" href="mailto:your@email.com">Contact Us</a>
+    <div class="card">
+        <h2>Contact</h2>
+
+        <!-- Replace your@email.com with your real email -->
+        <form action="mailto:your@email.com" method="POST" enctype="text/plain">
+
+            <input type="text" name="Name" placeholder="Your Name" required>
+
+            <input type="email" name="Email" placeholder="Your Email" required>
+
+            <textarea name="Message" rows="5" placeholder="Tell us about your business"></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+        <p style="margin-top:10px;">
+            Or email directly: your@email.com
+        </p>
+
     </div>
 
 </div>
