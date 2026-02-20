@@ -1,180 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lawton Small Business Web Assistance | Affordable Websites</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
+<title>Lawton Small Business Web Assistance | Affordable Websites</title>
 
-        /* ===== BODY BACKGROUND ===== */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            line-height: 1.6;
+<style>
 
-            background: url("background.jpg") no-repeat center center fixed;
-            background-size: cover;
-        }
+/* ===== BODY ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background: url("background.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
 
-        /* ===== NAVBAR ===== */
-        .navbar {
-            position: sticky;
-            top: 0;
-            background: rgba(255,255,255,0.95);
-            backdrop-filter: blur(6px);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            z-index: 1000;
-        }
+/* ===== NAVBAR ===== */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    z-index: 1000;
+}
 
-        .nav-container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+.nav-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        .nav-logo {
-            font-weight: bold;
-            font-size: 20px;
-            color: #2c3e50;
-        }
+.nav-logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: #2c3e50;
+}
 
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 25px;
-            margin: 0;
-            padding: 0;
-        }
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
 
-        .nav-links a {
-            text-decoration: none;
-            color: #2c3e50;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
+.nav-links a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+}
 
-        .nav-links a:hover {
-            color: #007BFF;
-        }
+.nav-links a:hover {
+    color: #007BFF;
+}
 
-        /* ===== HEADER ===== */
-        header {
-            text-align: center;
-            padding: 40px 20px;
-            color: white;
-        }
+/* ===== HEADER ===== */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+}
 
-        header img {
-            max-width: 600px;
-            height: auto;
-            display: block;
-            margin: 0 auto 10px auto;
-        }
+header img {
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
 
-        h1, h2 {
-            color: #1f3c5b;
-        }
+/* ===== SECTIONS ===== */
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+    background: rgba(255,255,255,0.92);
+    border-radius: 12px;
+}
 
-        /* ===== SECTIONS ===== */
-        section {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: 30px auto;
-            background: rgba(255,255,255,0.9);
-            border-radius: 10px;
-        }
+/* ===== CARDS ===== */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
 
-        /* ===== CARDS ===== */
-        .card-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    flex: 1 1 250px;
+    text-align: center;
+    transition: 0.3s;
+}
 
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-            flex: 1 1 250px;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+}
 
-        .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 18px rgba(0,0,0,0.15);
-        }
+.price {
+    font-size: 26px;
+    font-weight: bold;
+    color: #2a6f97;
+}
 
-        .price {
-            font-size: 24px;
-            font-weight: bold;
-            color: #2a6f97;
-        }
+/* ===== BUTTON ===== */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    background: #2a6f97;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.25s;
+}
 
-        /* ===== FORM ===== */
-        form {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
+.btn:hover {
+    background: #1f4e70;
+    transform: scale(1.05);
+}
 
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
+/* ===== FORM ===== */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
 
-        button {
-            background: #2a6f97;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: transform 0.2s ease, background 0.2s ease;
-        }
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
 
-        button:hover {
-            transform: scale(1.05);
-            background: #1f4e70;
-        }
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(31,60,91,0.95);
+    color: white;
+    margin-top: 40px;
+}
 
-        /* ===== FOOTER ===== */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: rgba(31,60,91,0.95);
-            color: white;
-            margin-top: 40px;
-        }
+/* ===== ANIMATION ===== */
+@keyframes fadeIn {
+    from {opacity:0; transform: translateY(20px);}
+    to {opacity:1; transform: translateY(0);}
+}
 
-        /* ===== ANIMATIONS ===== */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+header, section, footer {
+    animation: fadeIn 1s ease forwards;
+}
 
-        header, section, footer {
-            animation: fadeIn 1s ease forwards;
-        }
-
-    </style>
+</style>
 </head>
 
 <body>
@@ -201,43 +191,70 @@
 <!-- SERVICES -->
 <section id="services">
     <h2>Our Services</h2>
+
     <div class="card-container">
+
         <div class="card">
-            <h3>Business Websites</h3>
-            <p>Clean, mobile‑friendly websites to showcase your business.</p>
+            <h3>Starter Website</h3>
+            <p>Perfect for new businesses needing a simple online presence.</p>
+            <a href="starter.html" class="btn">Learn More</a>
         </div>
+
         <div class="card">
-            <h3>Website Updates</h3>
-            <p>Need changes or improvements? We can help.</p>
+            <h3>Business Website</h3>
+            <p>Professional website with multiple pages and custom layout.</p>
+            <a href="business.html" class="btn">Learn More</a>
         </div>
+
         <div class="card">
-            <h3>Online Presence</h3>
-            <p>Get found online and attract more customers.</p>
+            <h3>Premium Website</h3>
+            <p>Advanced features, booking options, and full customization.</p>
+            <a href="premium.html" class="btn">Learn More</a>
         </div>
+
+        <div class="card">
+            <h3>Monthly Support</h3>
+            <p>Ongoing updates, fixes, and website help whenever needed.</p>
+            <a href="support.html" class="btn">Learn More</a>
+        </div>
+
     </div>
 </section>
 
 <!-- PRICING -->
 <section id="pricing">
     <h2>Pricing</h2>
+
     <div class="card-container">
+
         <div class="card">
             <h3>Starter</h3>
             <p class="price">$150</p>
             <p>1‑3 pages<br>Mobile friendly<br>Basic contact info</p>
+            <a href="starter.html" class="btn">Get Started</a>
         </div>
 
         <div class="card">
             <h3>Business</h3>
             <p class="price">$300</p>
             <p>Up to 5 pages<br>Custom design<br>Contact form</p>
+            <a href="business.html" class="btn">Get Started</a>
         </div>
 
         <div class="card">
             <h3>Premium</h3>
             <p class="price">$500</p>
             <p>Advanced design<br>Booking features<br>Priority support</p>
+            <a href="premium.html" class="btn">Get Started</a>
         </div>
+
+        <div class="card">
+            <h3>Monthly Support</h3>
+            <p class="price">$50/mo</p>
+            <p>Website updates<br>Priority help<br>Maintenance</p>
+            <a href="support.html" class="btn">Subscribe</a>
+        </div>
+
     </div>
 </section>
 
@@ -255,7 +272,7 @@
         <label>Message</label>
         <textarea name="message" rows="5" required></textarea>
 
-        <button type="submit">Send Message</button>
+        <button type="submit" class="btn">Send Message</button>
     </form>
 </section>
 
