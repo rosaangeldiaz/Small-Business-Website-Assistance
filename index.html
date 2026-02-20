@@ -6,29 +6,91 @@
     <title>Lawton Small Business Web Assistance</title>
 
     <style>
+
+        /* PAGE BACKGROUND */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             line-height: 1.6;
-            background: #f4f6f8;
+            background: url("background.jpg") no-repeat center center fixed;
+            background-size: cover;
         }
 
+        /* MAKE CONTENT READABLE OVER BACKGROUND */
+        header, section {
+            background: rgba(255, 255, 255, 0.92);
+        }
+
+        /* NAVBAR */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-weight: bold;
+            font-size: 20px;
+            color: #2c3e50;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #007BFF;
+        }
+
+        /* HEADER */
         header {
             text-align: center;
-            padding: 10px 20px;
-            background: white;
+            padding: 20px 20px 30px 20px;
+        }
+
+        .main-logo {
+            max-width: 420px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px auto;
+            animation: fadeIn 1.5s ease forwards;
+        }
+
+        h1, h2 {
+            color: #1f3c5b;
+            margin: 10px 0;
         }
 
         section {
             padding: 40px 20px;
             max-width: 1000px;
-            margin: auto;
+            margin: 30px auto;
+            border-radius: 10px;
         }
 
-        h1, h2 {
-            color: #1f3c5b;
-        }
-
+        /* CARDS */
         .card-container {
             display: flex;
             flex-wrap: wrap;
@@ -57,6 +119,7 @@
             color: #2a6f97;
         }
 
+        /* FORM */
         form {
             background: white;
             padding: 20px;
@@ -88,14 +151,16 @@
             background: #1f4e70;
         }
 
+        /* FOOTER */
         footer {
             text-align: center;
             padding: 20px;
             background: #1f3c5b;
             color: white;
+            margin-top: 40px;
         }
 
-        /* Fade animation */
+        /* FADE ANIMATION */
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -111,29 +176,33 @@
             animation: fadeIn 1s ease forwards;
         }
 
-        .logo {
-            animation: fadeIn 1.5s ease forwards;
-        }
-
     </style>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">LSB Web</div>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HEADER -->
 <header>
+    <img src="logo.png" alt="Logo" class="main-logo">
 
-    <img src="logo.png"
-         alt="LSB Web Assistance Logo"
-         class="logo"
-         style="max-width:600px; height:auto; display:block; margin:0 auto;">
-
-    <h1 style="margin:0;">Lawton Small Business Web Assistance</h1>
-
-    <p style="margin:5px 0 0 0;">Helping local businesses get online quickly and affordably.</p>
-
+    <h1>Lawton Small Business Web Assistance</h1>
+    <p>Helping local businesses get online quickly and affordably.</p>
 </header>
 
-<section>
+<!-- SERVICES -->
+<section id="services">
     <h2>Our Services</h2>
 
     <div class="card-container">
@@ -154,11 +223,11 @@
     </div>
 </section>
 
-<section>
+<!-- PRICING -->
+<section id="pricing">
     <h2>Pricing</h2>
 
     <div class="card-container">
-
         <div class="card">
             <h3>Starter</h3>
             <p class="price">$150</p>
@@ -176,15 +245,14 @@
             <p class="price">$500</p>
             <p>Advanced design<br>Booking features<br>Priority support</p>
         </div>
-
     </div>
 </section>
 
-<section>
+<!-- CONTACT -->
+<section id="contact">
     <h2>Contact Us</h2>
 
     <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
-
         <label>Name</label>
         <input type="text" name="name" required>
 
@@ -195,10 +263,10 @@
         <textarea name="message" rows="5" required></textarea>
 
         <button type="submit">Send Message</button>
-
     </form>
 </section>
 
+<!-- FOOTER -->
 <footer>
     <p>© 2026 Lawton Small Business Web Assistance</p>
 </footer>
