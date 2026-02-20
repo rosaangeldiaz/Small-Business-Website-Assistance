@@ -7,25 +7,22 @@
 
     <style>
 
-        /* PAGE BACKGROUND */
+        /* ===== BODY BACKGROUND ===== */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             line-height: 1.6;
+
             background: url("background.jpg") no-repeat center center fixed;
             background-size: cover;
         }
 
-        /* MAKE CONTENT READABLE OVER BACKGROUND */
-        header, section {
-            background: rgba(255, 255, 255, 0.92);
-        }
-
-        /* NAVBAR */
+        /* ===== NAVBAR ===== */
         .navbar {
             position: sticky;
             top: 0;
-            background: white;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(6px);
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
             z-index: 1000;
         }
@@ -49,8 +46,8 @@
             list-style: none;
             display: flex;
             gap: 25px;
-            padding: 0;
             margin: 0;
+            padding: 0;
         }
 
         .nav-links a {
@@ -64,33 +61,34 @@
             color: #007BFF;
         }
 
-        /* HEADER */
+        /* ===== HEADER ===== */
         header {
             text-align: center;
-            padding: 20px 20px 30px 20px;
+            padding: 40px 20px;
+            color: white;
         }
 
-        .main-logo {
-            max-width: 420px;
+        header img {
+            max-width: 600px;
             height: auto;
             display: block;
             margin: 0 auto 10px auto;
-            animation: fadeIn 1.5s ease forwards;
         }
 
         h1, h2 {
             color: #1f3c5b;
-            margin: 10px 0;
         }
 
+        /* ===== SECTIONS ===== */
         section {
             padding: 40px 20px;
             max-width: 1000px;
             margin: 30px auto;
+            background: rgba(255,255,255,0.9);
             border-radius: 10px;
         }
 
-        /* CARDS */
+        /* ===== CARDS ===== */
         .card-container {
             display: flex;
             flex-wrap: wrap;
@@ -119,7 +117,7 @@
             color: #2a6f97;
         }
 
-        /* FORM */
+        /* ===== FORM ===== */
         form {
             background: white;
             padding: 20px;
@@ -151,16 +149,16 @@
             background: #1f4e70;
         }
 
-        /* FOOTER */
+        /* ===== FOOTER ===== */
         footer {
             text-align: center;
             padding: 20px;
-            background: #1f3c5b;
+            background: rgba(31,60,91,0.95);
             color: white;
             margin-top: 40px;
         }
 
-        /* FADE ANIMATION */
+        /* ===== ANIMATIONS ===== */
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -195,8 +193,7 @@
 
 <!-- HEADER -->
 <header>
-    <img src="logo.png" alt="Logo" class="main-logo">
-
+    <img src="logo.png" alt="LSB Web Assistance Logo">
     <h1>Lawton Small Business Web Assistance</h1>
     <p>Helping local businesses get online quickly and affordably.</p>
 </header>
@@ -204,18 +201,15 @@
 <!-- SERVICES -->
 <section id="services">
     <h2>Our Services</h2>
-
     <div class="card-container">
         <div class="card">
             <h3>Business Websites</h3>
             <p>Clean, mobile‑friendly websites to showcase your business.</p>
         </div>
-
         <div class="card">
             <h3>Website Updates</h3>
             <p>Need changes or improvements? We can help.</p>
         </div>
-
         <div class="card">
             <h3>Online Presence</h3>
             <p>Get found online and attract more customers.</p>
@@ -226,7 +220,6 @@
 <!-- PRICING -->
 <section id="pricing">
     <h2>Pricing</h2>
-
     <div class="card-container">
         <div class="card">
             <h3>Starter</h3>
