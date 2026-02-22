@@ -60,44 +60,25 @@ button:hover {
 <div class="container">
 
 <h1>Client Intake Form</h1>
+<form action="https://formsubmit.co/Launchyourweb.dev@gmail.com" method="POST">
+    
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New Website Inquiry">
+    <input type="hidden" name="_next" value="https://launchyourweb.dev/thankyou.html">
 
-<form action="https://formspree.io/f/mlgwpwll" method="POST" enctype="multipart/form-data">
+    <label>Name</label>
+    <input type="text" name="name" required>
 
-<label>Business Name</label>
-<input type="text" name="business_name" required>
+    <label>Email</label>
+    <input type="email" name="email" required>
 
-<label>Contact Name</label>
-<input type="text" name="contact_name" required>
+    <label>Phone</label>
+    <input type="text" name="phone">
 
-<label>Email</label>
-<input type="email" name="email" required>
+    <label>Message</label>
+    <textarea name="message" rows="5" required></textarea>
 
-<label>Phone</label>
-<input type="tel" name="phone">
-
-<label>Business Description</label>
-<textarea name="description" rows="4"></textarea>
-
-<label>Services Offered</label>
-<textarea name="services" rows="3"></textarea>
-
-<label>Do you have a logo?</label>
-<input type="file" name="logo">
-
-<label>Website Pages Needed</label>
-<textarea name="pages" rows="3"></textarea>
-
-<label>Colors You Like</label>
-<input type="text" name="colors">
-
-<label>Example Websites You Like</label>
-<textarea name="examples" rows="3"></textarea>
-
-<label>Anything Else?</label>
-<textarea name="notes" rows="4"></textarea>
-
-<button type="submit">Submit Information</button>
-
+    <button type="submit" class="btn">Send Message</button>
 </form>
 
 </div>
