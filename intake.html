@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Client Intake Form | Launch Your Web</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f7fb;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+h1 {
+    text-align: center;
+    color: #2a6f97;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 18px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #2a6f97;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1f4e70;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Client Intake Form</h1>
+
+<form action="https://formspree.io/f/YOURFORMID" method="POST" enctype="multipart/form-data">
+
+<label>Business Name</label>
+<input type="text" name="business_name" required>
+
+<label>Contact Name</label>
+<input type="text" name="contact_name" required>
+
+<label>Email</label>
+<input type="email" name="email" required>
+
+<label>Phone</label>
+<input type="tel" name="phone">
+
+<label>Business Description</label>
+<textarea name="description" rows="4"></textarea>
+
+<label>Services Offered</label>
+<textarea name="services" rows="3"></textarea>
+
+<label>Do you have a logo?</label>
+<input type="file" name="logo">
+
+<label>Website Pages Needed</label>
+<textarea name="pages" rows="3"></textarea>
+
+<label>Colors You Like</label>
+<input type="text" name="colors">
+
+<label>Example Websites You Like</label>
+<textarea name="examples" rows="3"></textarea>
+
+<label>Anything Else?</label>
+<textarea name="notes" rows="4"></textarea>
+
+<button type="submit">Submit Information</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
