@@ -25,83 +25,29 @@ h1 {
     text-align: center;
     color: #2a6f97;
 }
-
-label {
-    font-weight: bold;
-}
-
-input, textarea, select {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0 18px 0;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-}
-
-button {
-    background: #2a6f97;
-    color: white;
-    padding: 14px;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    width: 100%;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #1f4e70;
-}
 </style>
-</head>
 
+</head>
 <body>
 
 <div class="container">
 
 <h1>Client Intake Form</h1>
-<form action="https://formsubmit.co/admin@launchyourweb.dev" method="POST" enctype="multipart/form-data">
 
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_subject" value="New Client Intake Submission">
-    <input type="hidden" name="_next" value="https://launchyourweb.dev/thankyou.html">
+<p style="text-align:center;">
+Please complete the form below so we can learn about your business and project needs.
+</p>
 
-    <label>Business Name</label>
-    <input type="text" name="business_name" required>
+<!-- HUBSPOT FORM -->
+<script charset="utf-8" type="text/javascript" src="//js-na2.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    portalId: "245290133",
+    formId: "f69ffe45-b305-4c77-8061-c2bc97684b5d",
+    region: "na2"
+  });
+</script>
 
-    <label>Contact Name</label>
-    <input type="text" name="contact_name" required>
-
-    <label>Email</label>
-    <input type="email" name="email" required>
-
-    <label>Phone</label>
-    <input type="text" name="phone">
-
-    <label>Business Description</label>
-    <textarea name="description" rows="4"></textarea>
-
-    <label>Services Offered</label>
-    <textarea name="services" rows="4"></textarea>
-
-    <label>Do you have a logo? Upload here</label>
-    <input type="file" name="logo">
-
-    <label>Website Pages Needed</label>
-    <input type="text" name="pages">
-
-    <label>Colors You Like</label>
-    <input type="text" name="colors">
-
-    <label>Example Websites You Like</label>
-    <textarea name="examples" rows="3"></textarea>
-
-    <label>Anything Else?</label>
-    <textarea name="extra" rows="4"></textarea>
-
-    <button type="submit">Submit Intake Form</button>
-
-</form>
 </div>
 
 </body>
