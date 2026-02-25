@@ -9,13 +9,17 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: #f4f7fb;
+    line-height: 1.6;
+
+    /* SAME BACKGROUND AS MAIN SITE */
+    background: url("background.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
 .container {
     max-width: 800px;
     margin: 40px auto;
-    background: white;
+    background: rgba(255,255,255,0.95);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -25,13 +29,20 @@ h1 {
     text-align: center;
     color: #2a6f97;
 }
-</style>
 
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(31,60,91,0.95);
+    color: white;
+    margin-top: 40px;
+}
+</style>
 </head>
+
 <body>
 
 <div class="container">
-
 <h1>Client Intake Form</h1>
 
 <p style="text-align:center;">
@@ -49,9 +60,11 @@ Please complete the form below so we can learn about your business and project n
 </script>
 
 </div>
-    <footer>
+
+<footer>
     <p>© 2026 Small Business Web Assistance</p>
     <p>Phone: (646) 906‑4253 | Email: info@launchyourweb.dev</p>
 </footer>
+
 </body>
 </html>
