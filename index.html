@@ -14,10 +14,11 @@ body {
     margin: 0;
     line-height: 1.6;
     background: url("background.jpg") no-repeat center center fixed;
-    background-size: cover;/* Hide HubSpot attribution/footer */
-.hs-form .hs-richtext,
-.hs-form__powered-by,
-[class*="powered-by"],
+    background-size: cover;
+}
+    .hs-form iframe + div,
+.hs-form .legal-consent-container + div,
+.hsfc-Form__StyledAttribution-sc,
 [class*="attribution"] {
     display: none !important;
 }
