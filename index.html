@@ -73,10 +73,13 @@ header {
 header .btn {
     margin-top: 20px;
 }
-header {
-    text-align: center;
-    padding: 40px 20px;
-    color: white;
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 header img {
@@ -86,7 +89,6 @@ header img {
     display: block;
     margin: 0 auto 10px auto;
 }
-
 /* ===== SECTIONS ===== */
 section {
     padding: 40px 20px;
@@ -207,9 +209,10 @@ Affordable, mobile-friendly websites starting at just $150.
 Built fast, optimized for customers, and designed to help your business stand out.
 </p>
 
+<div class="hero-buttons">
     <a href="intake.html" class="btn">Get Started Today</a>
-    <br><br>
     <a href="#portfolio" class="btn">View Demo Websites</a>
+</div>
 </header> 
 
 <!-- SERVICES -->
