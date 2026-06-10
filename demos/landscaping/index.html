@@ -1,68 +1,125 @@
-<header>
-    <h1>Green Horizon Landscaping</h1>
-    <p>Professional Lawn Care & Landscaping Services</p>
-    <a href="contact.html" class="btn">Get a Free Estimate</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Green Horizon Landscaping</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    line-height:1.6;
+    color:#333;
+}
+
+.navbar{
+    background:#2d6a4f;
+    padding:15px 20px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin-right:20px;
+    font-weight:bold;
+}
+
+.hero{
+    background:url("images/hero.jpg") center center/cover;
+    height:500px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.5);
+    padding:30px;
+    border-radius:10px;
+}
+
+.btn{
+    display:inline-block;
+    background:#52b788;
+    color:white;
+    padding:12px 24px;
+    text-decoration:none;
+    border-radius:6px;
+    margin-top:15px;
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+.card-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    flex:1;
+    min-width:250px;
+    background:#f8f9fa;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+footer{
+    background:#2d6a4f;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<header class="hero">
+    <div class="hero-content">
+        <h1>Green Horizon Landscaping</h1>
+        <p>Professional Lawn Care, Landscaping & Outdoor Transformations</p>
+        <a href="#contact" class="btn">Get a Free Estimate</a>
+    </div>
 </header>
-<section>
+
+<section id="services">
     <h2>Our Services</h2>
 
     <div class="card-container">
 
         <div class="card">
             <h3>Lawn Maintenance</h3>
-            <p>Weekly and bi-weekly lawn care services.</p>
+            <p>Weekly and bi-weekly mowing, edging and cleanup services.</p>
         </div>
 
         <div class="card">
             <h3>Landscape Design</h3>
-            <p>Custom landscape planning and installation.</p>
+            <p>Custom landscaping solutions tailored to your property.</p>
         </div>
 
         <div class="card">
             <h3>Mulching & Planting</h3>
-            <p>Beautiful flower beds and seasonal plantings.</p>
+            <p>Fresh mulch, flowers, shrubs and seasonal planting.</p>
         </div>
 
     </div>
 </section>
-<section>
-    <h2>About Green Horizon</h2>
 
-    <p>
-        Green Horizon Landscaping has been helping homeowners
-        maintain beautiful outdoor spaces for over 10 years.
-        We take pride in dependable service, quality workmanship,
-        and customer satisfaction.
-    </p>
-</section>
-<section>
-    <h2>What Our Customers Say</h2>
-
-    <div class="card-container">
-
-        <div class="card">
-            <p>
-                "Our yard has never looked better. Highly recommend!"
-            </p>
-            <strong>- Sarah M.</strong>
-        </div>
-
-        <div class="card">
-            <p>
-                "Professional, reliable, and affordable."
-            </p>
-            <strong>- Michael T.</strong>
-        </div>
-
-    </div>
-</section>
-<section>
-    <h2>Request a Free Estimate</h2>
-
-    <form>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea placeholder="Tell us about your project"></textarea>
-        <button type="submit">Send Request</button>
-    </form>
-</section>
+</body>
+</html>
